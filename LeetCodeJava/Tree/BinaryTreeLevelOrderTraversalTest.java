@@ -38,7 +38,7 @@ public class BinaryTreeLevelOrderTraversalTest {
     @Test
     public void test1() {
         TreeNode treeNode = TreeNode.create(new Integer[]{3, 9, 20, null, null, 15, 7});
-        Assert.assertEquals(Arrays.asList(Collections.singletonList(3), Arrays.asList(9, 20), Arrays.asList(15, 7)), levelOrder(treeNode));
+        Assert.assertEquals(List.of(Collections.singletonList(3), List.of(9, 20), List.of(15, 7)), levelOrder(treeNode));
     }
 
     @Test

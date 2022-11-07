@@ -24,12 +24,12 @@ public class PascalTriangleTest {
     @Test
     public void basicTest() {
         Assert.assertEquals(
-                Arrays.asList(
-                        Arrays.asList(1),
-                        Arrays.asList(1, 1),
-                        Arrays.asList(1, 2, 1),
-                        Arrays.asList(1, 3, 3, 1),
-                        Arrays.asList(1, 4, 6, 4, 1)
+                List.of(
+                        List.of(1),
+                        List.of(1, 1),
+                        List.of(1, 2, 1),
+                        List.of(1, 3, 3, 1),
+                        List.of(1, 4, 6, 4, 1)
                 ),
                 generate(5));
         Assert.assertEquals(Collections.singletonList(Collections.singletonList(1)), generate(1));

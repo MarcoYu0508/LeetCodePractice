@@ -1,10 +1,9 @@
 package Tree;
 
-import Tree.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class ConvertSortedArrayToBinarySearchTreeTest {
     public TreeNode sortedArrayToBST(int[] numbs) {
@@ -23,7 +22,7 @@ public class ConvertSortedArrayToBinarySearchTreeTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList(0, -10, 5, -3, 9), sortedArrayToBST(new int[]{-10, -3, 0, 5, 9}).levelOrderList());
-        Assert.assertEquals(Arrays.asList(1, 3), sortedArrayToBST(new int[]{1, 3}).levelOrderList());
+        Assert.assertEquals(List.of(0, -10, 5, -3, 9), sortedArrayToBST(new int[]{-10, -3, 0, 5, 9}).levelOrderList());
+        Assert.assertEquals(List.of(1, 3), sortedArrayToBST(new int[]{1, 3}).levelOrderList());
     }
 }

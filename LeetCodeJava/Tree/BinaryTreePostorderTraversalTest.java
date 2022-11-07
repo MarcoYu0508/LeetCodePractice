@@ -26,7 +26,7 @@ public class BinaryTreePostorderTraversalTest {
     @Test
     public void test1() {
         TreeNode root = TreeNode.create(new Integer[]{1, null, 2, 3});
-        Assert.assertEquals(Arrays.asList(3, 2, 1), postorderTraversal(root));
+        Assert.assertEquals(List.of(3, 2, 1), postorderTraversal(root));
     }
 
     @Test

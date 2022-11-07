@@ -1,10 +1,9 @@
 package Tree;
 
-import Tree.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class DeleteNodeInABSTTest {
     public TreeNode deleteNode(TreeNode root, int key) {
@@ -37,13 +36,13 @@ public class DeleteNodeInABSTTest {
     @Test
     public void test1() {
         TreeNode root = TreeNode.create(new Integer[]{5, 3, 6, 2, 4, null, 7});
-        Assert.assertEquals(Arrays.asList(5, 4, 6, 2, 7), deleteNode(root, 3).levelOrderList());
+        Assert.assertEquals(List.of(5, 4, 6, 2, 7), deleteNode(root, 3).levelOrderList());
     }
 
     @Test
     public void test2() {
         TreeNode root = TreeNode.create(new Integer[]{5, 3, 6, 2, 4, null, 7});
-        Assert.assertEquals(Arrays.asList(5, 3, 6, 2, 4, 7), deleteNode(root, 0).levelOrderList());
+        Assert.assertEquals(List.of(5, 3, 6, 2, 4, 7), deleteNode(root, 0).levelOrderList());
     }
 
 }

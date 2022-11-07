@@ -27,12 +27,12 @@ public class BinaryTreeRightSideViewTest {
     @Test
     public void test1() {
         TreeNode root = TreeNode.create(new Integer[]{1, 2, 3, null, 5, null, 4});
-        Assert.assertEquals(Arrays.asList(1, 3, 4), rightSideView(root));
+        Assert.assertEquals(List.of(1, 3, 4), rightSideView(root));
     }
 
     @Test
     public void test2() {
         TreeNode root = TreeNode.create(new Integer[]{1, null, 3});
-        Assert.assertEquals(Arrays.asList(1, 3), rightSideView(root));
+        Assert.assertEquals(List.of(1, 3), rightSideView(root));
     }
 }

@@ -1,3 +1,5 @@
+package Heap;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -30,7 +32,7 @@ public class TopKFrequentWordsTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList("i", "love"), topKFrequent(new String[]{"i", "love", "leetcode", "i", "love", "coding"}, 2));
-        Assert.assertEquals(Arrays.asList("the", "is", "sunny", "day"), topKFrequent(new String[]{"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"}, 4));
+        Assert.assertEquals(List.of("i", "love"), topKFrequent(new String[]{"i", "love", "leetcode", "i", "love", "coding"}, 2));
+        Assert.assertEquals(List.of("the", "is", "sunny", "day"), topKFrequent(new String[]{"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"}, 4));
     }
 }

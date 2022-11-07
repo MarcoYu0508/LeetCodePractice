@@ -50,7 +50,7 @@ public class FindAllAnagramsInAStringTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList(0, 6), findAnagrams("cbaebabacd", "abc"));
-        Assert.assertEquals(Arrays.asList(0, 1, 2), findAnagrams("abab", "ab"));
+        Assert.assertEquals(List.of(0, 6), findAnagrams("cbaebabacd", "abc"));
+        Assert.assertEquals(List.of(0, 1, 2), findAnagrams("abab", "ab"));
     }
 }

@@ -3,8 +3,8 @@ package LinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class RemoveLinkedListElementsTest {
     public ListNode removeElements(ListNode head, int val) {
@@ -23,7 +23,7 @@ public class RemoveLinkedListElementsTest {
     @Test
     public void test1() {
         ListNode node = ListNode.createListNode(new int[]{1, 2, 6, 3, 4, 5, 6}, 0);
-        Assert.assertEquals(Arrays.asList(1, 2, 3, 4, 5), ListNode.toList(removeElements(node, 6)));
+        Assert.assertEquals(List.of(1, 2, 3, 4, 5), ListNode.toList(removeElements(node, 6)));
     }
 
     @Test
@@ -40,6 +40,6 @@ public class RemoveLinkedListElementsTest {
     @Test
     public void test4() {
         ListNode node = ListNode.createListNode(new int[]{1, 2, 2, 1}, 0);
-        Assert.assertEquals(Arrays.asList(1, 1), ListNode.toList(removeElements(node, 2)));
+        Assert.assertEquals(List.of(1, 1), ListNode.toList(removeElements(node, 2)));
     }
 }

@@ -28,13 +28,13 @@ public class CombinationsTest {
 
     @Test
     public void test1() {
-        List<List<Integer>> answer = Arrays.asList(
-                Arrays.asList(1, 2),
-                Arrays.asList(1, 3),
-                Arrays.asList(1, 4),
-                Arrays.asList(2, 3),
-                Arrays.asList(2, 4),
-                Arrays.asList(3, 4));
+        List<List<Integer>> answer = List.of(
+                List.of(1, 2),
+                List.of(1, 3),
+                List.of(1, 4),
+                List.of(2, 3),
+                List.of(2, 4),
+                List.of(3, 4));
         Assert.assertEquals(answer, combine(4, 2));
     }
 

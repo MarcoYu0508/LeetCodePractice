@@ -1,11 +1,10 @@
 package LinkedList;
 
-import LinkedList.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class SwapNodesInPairsTest {
     public ListNode swapPairs(ListNode head) {
@@ -28,7 +27,7 @@ public class SwapNodesInPairsTest {
     @Test
     public void test1() {
         ListNode head = ListNode.createListNode(new int[]{1, 2, 3, 4}, 0);
-        Assert.assertEquals(Arrays.asList(2, 1, 4, 3), ListNode.toList(swapPairs(head)));
+        Assert.assertEquals(List.of(2, 1, 4, 3), ListNode.toList(swapPairs(head)));
     }
 
     @Test

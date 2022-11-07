@@ -3,7 +3,7 @@ package Tree;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class InsertIntoABinarySearchTreeTest {
     public TreeNode insertIntoBST(TreeNode root, int val) {
@@ -26,12 +26,12 @@ public class InsertIntoABinarySearchTreeTest {
     @Test
     public void test1() {
         TreeNode root = TreeNode.create(new Integer[]{4, 2, 7, 1, 3});
-        Assert.assertEquals(Arrays.asList(4, 2, 7, 1, 3, 5), insertIntoBST(root, 5).levelOrderList());
+        Assert.assertEquals(List.of(4, 2, 7, 1, 3, 5), insertIntoBST(root, 5).levelOrderList());
     }
 
     @Test
     public void test2() {
         TreeNode root = TreeNode.create(new Integer[]{40, 20, 60, 10, 30, 50, 70});
-        Assert.assertEquals(Arrays.asList(40, 20, 60, 10, 30, 50, 70, 25), insertIntoBST(root, 25).levelOrderList());
+        Assert.assertEquals(List.of(40, 20, 60, 10, 30, 50, 70, 25), insertIntoBST(root, 25).levelOrderList());
     }
 }

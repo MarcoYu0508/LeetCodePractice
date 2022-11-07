@@ -29,7 +29,7 @@ public class PartitionLabelsTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList(9, 7, 8), partitionLabels("ababcbacadefegdehijhklij"));
+        Assert.assertEquals(List.of(9, 7, 8), partitionLabels("ababcbacadefegdehijhklij"));
         Assert.assertEquals(Collections.singletonList(10), partitionLabels("eccbbbbdec"));
     }
 }

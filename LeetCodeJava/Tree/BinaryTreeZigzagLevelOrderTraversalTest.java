@@ -38,13 +38,13 @@ public class BinaryTreeZigzagLevelOrderTraversalTest {
     @Test
     public void test1() {
         TreeNode treeNode = TreeNode.create(new Integer[]{3, 9, 20, null, null, 15, 7});
-        Assert.assertEquals(Arrays.asList(Collections.singletonList(3), Arrays.asList(20, 9), Arrays.asList(15, 7)), zigzagLevelOrder(treeNode));
+        Assert.assertEquals(List.of(Collections.singletonList(3), List.of(20, 9), List.of(15, 7)), zigzagLevelOrder(treeNode));
     }
 
     @Test
     public void test2() {
         TreeNode treeNode = TreeNode.create(new Integer[]{1, 2, 3, 4, null, null, 5});
-        Assert.assertEquals(Arrays.asList(Collections.singletonList(1), Arrays.asList(3, 2), Arrays.asList(4, 5)), zigzagLevelOrder(treeNode));
+        Assert.assertEquals(List.of(Collections.singletonList(1), List.of(3, 2), List.of(4, 5)), zigzagLevelOrder(treeNode));
     }
 
 }

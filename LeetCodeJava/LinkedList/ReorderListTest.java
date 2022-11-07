@@ -3,7 +3,7 @@ package LinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class ReorderListTest {
     public void reorderList(ListNode head) {
@@ -43,13 +43,13 @@ public class ReorderListTest {
     public void test1() {
         ListNode head = ListNode.createListNode(new int[]{1, 2, 3, 4}, 0);
         reorderList(head);
-        Assert.assertEquals(Arrays.asList(1, 4, 2, 3), ListNode.toList(head));
+        Assert.assertEquals(List.of(1, 4, 2, 3), ListNode.toList(head));
     }
 
     @Test
     public void test2() {
         ListNode head = ListNode.createListNode(new int[]{1, 2, 3, 4, 5}, 0);
         reorderList(head);
-        Assert.assertEquals(Arrays.asList(1, 5, 2, 4, 3), ListNode.toList(head));
+        Assert.assertEquals(List.of(1, 5, 2, 4, 3), ListNode.toList(head));
     }
 }

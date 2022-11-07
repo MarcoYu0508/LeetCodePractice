@@ -26,7 +26,7 @@ public class BinaryTreePreorderTraversalTest {
     @Test
     public void test1() {
         TreeNode root = TreeNode.create(new Integer[]{1, null, 2, 3});
-        Assert.assertEquals(Arrays.asList(1, 2, 3), preorderTraversal(root));
+        Assert.assertEquals(List.of(1, 2, 3), preorderTraversal(root));
     }
 
     @Test

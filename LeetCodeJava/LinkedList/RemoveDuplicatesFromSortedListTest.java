@@ -3,7 +3,7 @@ package LinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class RemoveDuplicatesFromSortedListTest {
     public ListNode deleteDuplicates(ListNode head) {
@@ -27,12 +27,12 @@ public class RemoveDuplicatesFromSortedListTest {
     @Test
     public void test1() {
         ListNode node = ListNode.createListNode(new int[]{1, 1, 2}, 0);
-        Assert.assertEquals(Arrays.asList(1, 2), ListNode.toList(deleteDuplicates(node)));
+        Assert.assertEquals(List.of(1, 2), ListNode.toList(deleteDuplicates(node)));
     }
 
     @Test
     public void test2() {
         ListNode node = ListNode.createListNode(new int[]{1, 1, 2, 3, 3}, 0);
-        Assert.assertEquals(Arrays.asList(1, 2, 3), ListNode.toList(deleteDuplicates(node)));
+        Assert.assertEquals(List.of(1, 2, 3), ListNode.toList(deleteDuplicates(node)));
     }
 }

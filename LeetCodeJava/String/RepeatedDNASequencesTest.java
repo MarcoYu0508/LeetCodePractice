@@ -18,7 +18,7 @@ public class RepeatedDNASequencesTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList("AAAAACCCCC", "CCCCCAAAAA"), findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"));
+        Assert.assertEquals(List.of("AAAAACCCCC", "CCCCCAAAAA"), findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"));
         Assert.assertEquals(Collections.singletonList("AAAAAAAAAA"), findRepeatedDnaSequences("AAAAAAAAAAAAA"));
     }
 }

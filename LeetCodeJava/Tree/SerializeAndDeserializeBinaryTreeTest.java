@@ -65,6 +65,6 @@ public class SerializeAndDeserializeBinaryTreeTest {
         Codec codec = new Codec();
         TreeNode root = TreeNode.create(new Integer[]{1, 2, 3, null, null, 4, 5});
         TreeNode ans = codec.deserialize(codec.serialize(root));
-        Assert.assertEquals(Arrays.asList(1, 2, 3, 4, 5), ans.levelOrderList());
+        Assert.assertEquals(List.of(1, 2, 3, 4, 5), ans.levelOrderList());
     }
 }

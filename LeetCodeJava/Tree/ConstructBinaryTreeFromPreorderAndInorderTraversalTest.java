@@ -1,11 +1,10 @@
 package Tree;
 
-import Tree.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class ConstructBinaryTreeFromPreorderAndInorderTraversalTest {
 
@@ -32,6 +31,6 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversalTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList(3, 9, 20, 15, 7), buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7}).levelOrderList());
+        Assert.assertEquals(List.of(3, 9, 20, 15, 7), buildTree(new int[]{3, 9, 20, 15, 7}, new int[]{9, 3, 15, 20, 7}).levelOrderList());
     }
 }

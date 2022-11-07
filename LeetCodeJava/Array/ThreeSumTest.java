@@ -60,9 +60,9 @@ public class ThreeSumTest {
 
     @Test
     public void basicTest() {
-        Assert.assertEquals(Arrays.asList(Arrays.asList(-1, -1, 2), Arrays.asList(-1, 0, 1)), threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+        Assert.assertEquals(List.of(List.of(-1, -1, 2), List.of(-1, 0, 1)), threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
         Assert.assertEquals(Collections.emptyList(), threeSum(new int[]{0, 1, 1}));
-        Assert.assertEquals(Collections.singletonList(Arrays.asList(0, 0, 0)), threeSum(new int[]{0, 0, 0}));
+        Assert.assertEquals(Collections.singletonList(List.of(0, 0, 0)), threeSum(new int[]{0, 0, 0}));
     }
 }
 
