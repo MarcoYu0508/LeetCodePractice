@@ -28,7 +28,7 @@ var combinationSum = function (candidates, target) {
     for (const num of candidates) set.add(num);
     let i;
     let _target;
-    
+
     for (let index = candidates.length - 1; index >= 0; index--) {
         i = index;
         _target = target
@@ -55,7 +55,7 @@ var combinationSum = function (candidates, target) {
         }
     }
     const results = [];
-    for(const result of resultSet) {
+    for (const result of resultSet) {
         const numbers = [];
         const number_str = result.split(",");
         for (const str of number_str) {
@@ -66,6 +66,6 @@ var combinationSum = function (candidates, target) {
     return results;
 };
 
-console.log(combinationSum([2,3,6,7], 7));
-console.log(combinationSum([2,3,5], 8));
+console.log(combinationSum([2, 3, 6, 7], 7));
+console.log(combinationSum([2, 3, 5], 8));
 console.log(combinationSum([2], 1));

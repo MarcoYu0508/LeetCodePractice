@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import java.util.HashMap;
 
-public class TwoSumTest {
+public class  TwoSumTest {
 
     public int[] twoSum(int[] numbs, int target) {
         int[] res = new int[2];
